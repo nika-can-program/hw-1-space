@@ -46,20 +46,11 @@ namespace домашка_1_пробелы
             {
                 StreamReader stream = new StreamReader(openFileDialog1.FileName);
 
-                string str = "";
-
-                while (!stream.EndOfStream)
-                {
-                    str += stream.ReadLine();
-                }
-
-                foreach(char space in str)
-                {
-                    if(space==' ')
-                    {
-                        MessageBox.Show("ПРОБЕЛЕЛЕЛЕ");
-                    }
-                }
+                string[] textMass;
+                string text = File.ReadAllText(openFileDialog1.FileName);
+                textMass = text.Split(' ');
+                string a = Convert.ToString(textMass.Length);
+                MessageBox.Show(a);
 
             }
         }
