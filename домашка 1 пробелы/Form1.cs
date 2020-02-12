@@ -49,8 +49,8 @@ namespace домашка_1_пробелы
                 string[] textMass;
                 string text = File.ReadAllText(openFileDialog1.FileName);
                 textMass = text.Split(' ');
-                string a = Convert.ToString(textMass.Length);
-                MessageBox.Show(a);
+                string i = Convert.ToString(textMass.Length);
+                MessageBox.Show(i);
 
             }
         }
